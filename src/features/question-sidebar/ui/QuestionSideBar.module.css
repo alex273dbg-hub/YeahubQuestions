@@ -1,0 +1,44 @@
+.questionSideBar {
+  background-color: var(--white);
+  padding: 24px;
+  max-height: 950px;
+  height: auto;
+  overflow-y: auto;
+  border-radius: 24px;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.specList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 1000px;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.specHide {
+  max-height: 210px;
+}
+
+.skillHide {
+  max-height: 110px;
+  overflow: hidden;
+}
+
+.moreButton {
+  color: var(--purple-heart);
+  width: fit-content;
+  text-decoration: underline;
+}

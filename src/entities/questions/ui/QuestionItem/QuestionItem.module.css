@@ -1,0 +1,79 @@
+.accordionItem {
+  box-shadow: 0px 4px 10px rgba(106, 99, 118, 0.1);
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+
+.accordionContent {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.accordionCollapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+.accordionCollapse.show {
+  max-height: 1000px;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.accordionArrow {
+  transition: transform 0.3s;
+}
+.accordionArrow.rotated {
+  transform: rotate(180deg);
+}
+
+.accordionHeaderTitle {
+  position: relative;
+  padding-left: 16px;
+}
+
+.accordionHeaderTitle::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--han-purple);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accordionGradeWrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.accordionGrade {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 10px 8px;
+  font-weight: 600;
+}
+
+.accordionRate {
+  margin-left: 12px;
+  color: var(--white);
+  background-color: var(--electric-indigo);
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.accordionMoreLink {
+  color: var(--electric-indigo);
+  font-weight: 600;
+}

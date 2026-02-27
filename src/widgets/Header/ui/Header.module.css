@@ -1,0 +1,43 @@
+.header {
+  padding: 8px 0;
+  font-size: 16px;
+  background-color: var(--white);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+  color: var(--nero);
+  line-height: 140%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.login {
+  color: var(--electric-indigo);
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.register {
+  color: var(--white);
+  background-color: var(--electric-indigo);
+  padding: 11px 28px;
+  border-radius: 12px;
+}

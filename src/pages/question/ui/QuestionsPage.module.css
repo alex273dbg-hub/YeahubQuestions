@@ -1,0 +1,9 @@
+.questionsPage {
+  padding: 40px 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 392px;
+  gap: 20px;
+}
