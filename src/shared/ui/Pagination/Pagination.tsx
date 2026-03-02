@@ -1,4 +1,4 @@
-import styles from './QuestionPagination.module.css';
+import styles from './Pagination.module.css';
 interface QuestionPaginationProps {
   currentPage: number;
   totalPages: number;
@@ -7,7 +7,7 @@ interface QuestionPaginationProps {
   pageSize?: number;
 }
 
-const QuestionPagination = ({ currentPage, totalPages, onPageChange }: QuestionPaginationProps) => {
+const Pagination = ({ currentPage, totalPages, onPageChange }: QuestionPaginationProps) => {
   const getPageNumbers = () => {
     const pages: (number | string)[] = [];
     const delta = 2;
@@ -101,4 +101,4 @@ const QuestionPagination = ({ currentPage, totalPages, onPageChange }: QuestionP
   );
 };
 
-export default QuestionPagination;
+export default Pagination;

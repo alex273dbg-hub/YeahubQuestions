@@ -3,7 +3,9 @@ import styles from './QuestionSideBar.module.css';
 import SerachInput from '@/shared/ui/SearchInput/SearchInput';
 import { useAppDispatch, useAppSelector } from '@/app/appStore';
 import { sidebarActions } from '../model/sidebarSlice';
-import { SkillsBtn, SpecealizetionBtn, LevelsBtn, RateBtn } from '@/entities/sidebar';
+import { LevelsBtn, RateBtn } from '@/shared/ui';
+import { SpecealizetionBtn } from '@/entities/Specealizetion';
+import { SkillsBtn } from '@/entities/skills';
 
 const QuestionSideBar = () => {
   const { searchValue } = useAppSelector((state) => state.sidebarSlice);

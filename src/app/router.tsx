@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router';
 import QuestionsPage from '@/pages/question/ui/QuestionsPage';
-import QuestionDetails from '@/pages/question-details/ui/QuestionDetails';
+import QuestionDetailsPage from '@/pages/question-details/ui/QuestionDetailsPage';
 import BaseLayout from './layouts/BaseLayuots';
 
 export const router = createBrowserRouter([
@@ -9,7 +9,7 @@ export const router = createBrowserRouter([
     element: <BaseLayout />,
     children: [
       { index: true, element: <QuestionsPage /> },
-      { path: ':id', element: <QuestionDetails /> },
+      { path: ':id', element: <QuestionDetailsPage /> },
     ],
   },
 ]);

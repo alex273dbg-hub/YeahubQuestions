@@ -1,0 +1,49 @@
+.CardInfo {
+  background-color: var(--white);
+  padding: 24px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-self: self-start;
+  gap: 24px;
+}
+
+.CardInfoName {
+  color: #474747;
+  margin-bottom: 8px;
+}
+
+.LevelsContent {
+  display: flex;
+  gap: 16px;
+}
+
+.LevelsContent p {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 10px 8px;
+  font-weight: 600;
+}
+
+.LevelsContent span {
+  margin-left: 12px;
+  color: var(--white);
+  background-color: var(--electric-indigo);
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.Keywords {
+  color: var(--electric-indigo);
+  font-weight: 400;
+}
+
+.Keywords div {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.author {
+  color: var(--electric-indigo);
+}

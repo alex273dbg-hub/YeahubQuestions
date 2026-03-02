@@ -1,4 +1,4 @@
-import { QuestionsCard } from '@/features/questions-list';
+import { QuestionsListContent } from '@/features/questions-list';
 import styles from './QuestionsPage.module.css';
 import QuestionSideBar from '@/features/question-sidebar/ui/QuestionSideBar';
 
@@ -7,7 +7,7 @@ const QuestionsPage = () => {
     <section className={styles.questionsPage}>
       <div className="container">
         <div className={styles.wrapper}>
-          <QuestionsCard />
+          <QuestionsListContent />
           <QuestionSideBar />
         </div>
       </div>

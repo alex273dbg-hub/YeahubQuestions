@@ -1,11 +1,13 @@
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { QuestionsList, QuestionPagination } from '@/entities/questions';
+import { QuestionsList } from '@/entities/questions';
+import { Pagination } from '@/shared/ui';
 import { useGetPublicQuestionsQuery } from '@/entities/questions/api/questionsApi';
-import styles from './QuestionsCard.module.css';
 import { useAppSelector } from '@/app/appStore';
 import useDebounce from '@/shared/hooks/useDebouns';
 
-const QuestionsCard = () => {
+import styles from './QuestionsListContent.module.css';
+
+const QuestionsListContent = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
 
@@ -18,7 +20,7 @@ const QuestionsCard = () => {
   const { data: questions } = useGetPublicQuestionsQuery({
     page: currentPage,
     limit: limit,
-    title: useDebounce(searchValue, 500),
+    title: useDebounce<string>(searchValue, 500),
     specializationId: specializationsId,
     skills: skillsId.length ? skillsId : undefined,
     rate: rate.length ? rate : undefined,
@@ -40,7 +42,7 @@ const QuestionsCard = () => {
       <QuestionsList questions={questions?.data || []} />
 
       {totalItems > 0 && (
-        <QuestionPagination
+        <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={handlePageChange}
@@ -50,4 +52,4 @@ const QuestionsCard = () => {
   );
 };
 
-export default QuestionsCard;
+export default QuestionsListContent;

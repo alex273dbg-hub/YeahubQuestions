@@ -1,3 +1,3 @@
-import QuestionsCard from "./ui/QuestionCard/QuestionCard";
+import QuestionsListContent from './ui/QuestionCard/QuestionsListContent';
 
-export { QuestionsCard };
+export { QuestionsListContent };

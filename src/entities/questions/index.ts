@@ -1,4 +1,4 @@
-import QuestionsList from "./ui/QuestionList/QuestionsList";
-import QuestionPagination from "./ui/QuestionPagination/QuestionPagination";
+import QuestionsList from './ui/QuestionList/QuestionsList';
+import type QuestionResponse from './model/types';
 
-export { QuestionsList, QuestionPagination };
+export { QuestionsList, type QuestionResponse };

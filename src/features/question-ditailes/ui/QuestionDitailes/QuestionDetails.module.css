@@ -1,0 +1,14 @@
+.QuestionDetailesSection {
+  padding: 25px 0;
+}
+
+.GoBack {
+  margin-bottom: 24px;
+  display: block;
+}
+
+.Content {
+  display: grid;
+  grid-template-columns: 1fr 392px;
+  gap: 20px;
+}
